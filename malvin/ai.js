@@ -85,7 +85,7 @@ async function generateImage(endpoint, params, conText, captionLabel, promptForC
 
 // ==================== TEXT AI COMMANDS ====================
 
-mxd({ pattern: "malvinai", aliases: ["ai"], description: "Chat with MalvinAI assistant", category: "ai", filename: __filename },
+mxd({ pattern: "geraldai", aliases: ["ai"], description: "Chat with Gerald's AI assistant", category: "ai", filename: __filename },
 async (from, Malvin, conText) => { await queryAI("malvinai", "text", conText.q, conText, (data) => data?.result); });
 
 mxd({ pattern: "gemini", description: "Chat with Google Gemini", category: "ai", filename: __filename },
